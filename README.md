@@ -1,10 +1,9 @@
-![Quick Translator icon](icons/icon128.png)
-
-<h1 align="center">Quick Translator</h1>
+![Quick Translator banner](icons/banner.png)
 
 <p align="center">
   A Chrome extension for translating selected text and whole pages.<br>
-  A minimalist black interface, Chrome's offline model, and a cloud fallback.
+  A minimalist black interface, Chrome's offline model, and a cloud fallback.<br>
+  <strong>This project was fully created by AI.</strong>
 </p>
 
 <p align="center">
@@ -163,7 +162,7 @@ The extension has no server of its own and does not collect statistics.
 
 ## Built with AI
 
-This project was created with the help of artificial intelligence tools.
+This project was fully created by artificial intelligence.
 
 ## What's new in 1.1.0
 
