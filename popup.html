@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Быстрый переводчик</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <img class="logo" src="icons/icon48.png" alt="" width="36" height="36">
+      <div class="header-text">
+        <h1 data-i18n="appName">Быстрый переводчик</h1>
+        <p data-i18n="appTagline">Выделение · страница · офлайн</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="field-row">
+          <label for="uiLang" data-i18n="uiLanguage">Язык интерфейса</label>
+          <select id="uiLang" data-i18n-aria="uiLanguageAria" aria-label="Язык интерфейса"></select>
+        </div>
+
+        <div class="field-row">
+          <label for="targetLang" data-i18n="targetLanguage">Переводить на</label>
+          <select id="targetLang" data-i18n-aria="targetLanguageAria" aria-label="Язык перевода"></select>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-text">
+            <strong data-i18n="autoTitle">Автоперевод выделения</strong>
+            <small id="autoHint">Показывать перевод сразу после выделения</small>
+          </div>
+          <label class="switch">
+            <input id="autoSelection" type="checkbox" data-i18n-aria="autoAria" aria-label="Автоперевод выделения">
+            <span class="track" aria-hidden="true"></span>
+            <span class="sr-only" data-i18n="autoAria">Автоперевод выделения</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="card page-card" id="pageCard">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="wholePage">Вся страница</h2>
+            <p class="page-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="pageStatus">Проверяю страницу…</span>
+            </p>
+          </div>
+        </div>
+        <button class="button primary" id="pageButton" type="button">Перевести страницу</button>
+      </section>
+
+      <p class="shortcuts">
+        <span><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> — <span data-i18n="shortcutSelection">выделение</span></span>
+        <span><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> — <span data-i18n="shortcutPage">вся страница</span></span>
+      </p>
+
+      <p class="privacy" data-i18n="privacy">Сначала офлайн-модель Chrome. Если она недоступна — Google, DeepL и MyMemory. История не сохраняется.</p>
+    </main>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

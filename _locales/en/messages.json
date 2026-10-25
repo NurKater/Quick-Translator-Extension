@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Quick Translator"
+  },
+  "extShortName": {
+    "message": "Translator"
+  },
+  "extDescription": {
+    "message": "Translate selected text and whole pages in one click."
+  },
+  "cmdSelection": {
+    "message": "Translate selected text"
+  },
+  "cmdPage": {
+    "message": "Translate or restore the whole page"
+  }
+}
